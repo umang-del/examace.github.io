@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing 1st Proj</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header1">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links"id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="materials.html">MATERIALS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Notes</h1>
+ </section>
+<!------Notes------>
+<section class="notessection">
+    <h1>Presenting Our Exclusive Notes</h1>
+    <p>Here you'll get our all time updated and revised Notes</p>
+    <div class="container2">
+        <div class="f-group">
+            <label for="">Subject</label>
+            <select name="slct1" id="slct1" onchange="populate(this.id,'slct2')">
+                <option value=""> - Subject - </option>
+                <option value="quant">Quant</option>
+                <option value="reasoning">Reasoning</option>
+                <option value="english">English</option>
+                <option value="gk">Static G.K</option>
+                <option value="hindi">Hindi</option>
+
+            </select>
+        </div>
+        <div class="f-group">
+            <label for="">Chapter</label>
+            <select name="slct2" id="slct2"></select>
+        </div>
+    </div>
+    <div class="notessearchbox">
+        <input type="text" placeholder="Search Notes"><i class="fa fa-search"></i>
+    </div>
+   
+
+
+</section>
+
+
+
+<!------Footer------>
+
+<section class="footer">
+    <h5>About Us</h5>
+    <p>Explore our story and mission on our About Us page.<br> Learn about our passion for education and dedication to your success.</p>
+    <div class="icons">
+        <i class="fa fa-telegram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+    </div>
+    <p>Made with  <i class="fa fa-heart"></i>  From Umang</p>
+</section>
+
+
+ <!-------Java Script for Toogle Menu------>
+<script>
+
+    var navLinks = document.getElementById("navLinks")
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script> 
+<script>
+
+function populate(s1,s2)
+		{
+			var s1 = document.getElementById(s1);
+			var s2 = document.getElementById(s2);
+
+			s2.innerHTML = "";
+
+			if(s1.value == "quant")
+			{
+				var optionArray = ['numbersystem|Number System','percentage|Percentage','ratio|Ratio','average|Average','algebra|Algebra','trigonometry|Trigonometry','geometry|Geometry','mensuration|Mensuration','simplification|Simplification','lcm&hcf|LCM & HCF','surds and indices|Surds and Indices','ratio and proportion|Ratio and Proportion','discount|Discount','simple interest|Simple Interest','compound interest|Compound Interest','time and work|Time and Work','pipe and cistern|Pipe and Cistern','time and distance|Time and Distance','boats and streams|Boats and Streams','sequence and series|Sequence and Series','statistics|Stastistics'];
+			}
+			else if(s1.value  == 'reasoning')
+			{
+				var optionArray = ['blood relation|Blood Relation','analogy|Analogy','alphabet|Alphabet','calender|Calender','coding and decoding|Coding and Decoding','pair formation|Pair Formation','letter series|Letter Series','alphabet series|Alphabet Series','Word formation|Word Formation','dictionary|Dictionary','missing numbers|Missing Number','similaraty test|Similaraty test','classification|Classification','mathematical equation|Mathematical Equation','dice|Dice','Cube and cuboid|Cubes and Cuboids','counting shapes|Counting Shapes','watch|Watch','direction and distance|Direction and Distance','seating arrangements|Seating Arrangements','puzzles|Puzzles','venn diagram|Venn Diagram','inequalities|Inequalities','statement and conclusion|Statements and Conclusions'];
+			}
+
+			for(var option in optionArray)
+			{
+				var pair = optionArray[option].split("|");
+				var newoption = document.createElement("option");
+
+				newoption.value = pair[0];
+				newoption.innerHTML=pair[1];
+				s2.options.add(newoption);
+			}
+
+		}
+</script>
+</body>
+</html>
+

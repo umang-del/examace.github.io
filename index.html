@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing 1st Proj</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links"id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="materials.html">MATERIALS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                   
+                </ul>
+            </div>
+            <button class="btnLogin-popup">Login</button>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+<div class="text-box">
+    <h1>Test & Resources Hub</h1>
+    <p>This Website is still being built</p>
+    <p>Unrivaled educational resources, meticulously curated and designed to empower students with comprehensive learning tools, <br>making academic excellence attainable for all.</p>
+    <a href="" class="knowmore-btn">Know More</a>
+    
+</div>
+
+<div class="wrapper">
+    <span class="logincloseicon">
+        <i class="fa fa-close"></i>
+    </span>
+
+    <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon"><i class="fa fa-envelope"></i></span>
+                <input type="email" required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><i class="fa fa-lock"></i></span>
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" class="submitbtn11">Login</button>
+            <div class="login-register">
+                <p>Don't have an account?  <a href="#" class="register-link">  Register</a></p>
+            </div>
+        </form>
+    </div>
+
+    <div class="form-box register">
+        <h2>Register</h2>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon"><i class="fa fa-user"></i></span>
+                <input type="text" required>
+                <label>Username</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><i class="fa fa-envelope"></i></span>
+                <input type="email" required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><i class="fa fa-lock"></i></span>
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">I agree to the Terms & Conditions</label>
+            </div>
+            <button type="submit" class="submitbtn11">Register</button>
+            <div class="login-register">
+                <p>Already have an account?  <a href="#" class="login-link">  Login</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+ </section>
+
+ <!----- Material---->
+<section class="materials">
+    <h1>Our Materials</h1>
+    <p>Here you'll get our most recent and updated study materials</p>
+
+    <div class="row">
+        <div class="materials-col">
+            <h3>Notes</h3>
+            <p>Elevate your competitive exam preparation with our expertly-crafted notes. Covering a wide range of subjects, our materials offer concise explanations, summaries, and practice questions. Boost your confidence and understanding of complex topics, helping you reach your academic or professional goals. Your pathway to success starts with our meticulously curated study materials.</p>
+            <br>
+            <button class="getnotesbtn" onclick="window.location.href='againnotes.html'">GET NOTES</button>
+
+        </div>
+        <div class="materials-col">
+            <h3>Mock Test</h3>
+            <p>Prepare for competitive exams with our comprehensive mock test facilities. Our tailored exams cover a wide spectrum of subjects and topics, mimicking the real exam experience. Get a competitive edge by practicing with our timed, challenging tests. Track your progress, identify areas of improvement, and boost your confidence. Our mock tests are designed to be your ultimate preparation tool, ensuring you're well-prepared to excel in any competitive exam. Don't leave your success to chance; trust our mock tests to propel you towards your goals.</p>
+            <br>
+            <button class="taketestbtn">SOON</button>
+
+        </div>
+        <div class="materials-col">
+            <h3>Concept</h3>
+            <p>Introducing our groundbreaking "Concept" facility, a revolutionary approach to learning that sets us apart. Unlike anything offered by other institutions, "Concept" delves deep into the fundamental principles behind every subject. It unravels the core ideas, making even the most complex topics understandable. With this innovative tool, you'll gain a profound understanding of subjects, giving you a distinct advantage in competitive exams. Don't settle for traditional methods; embrace "Concept" and redefine the way you learn and succeed. Your path to excellence just got a whole lot smarter.</p>
+            <br>
+            <button class="concept2btn" onclick="window.location.href='concept.html'">CONCEPT</button>
+        </div>
+    </div>
+</section>
+<!------ testimonials ------>
+
+<section class="testimonials">
+        <h1>Students Feedback</h1>
+        <p>Students love our courses! They appreciate our engaging teaching style, interactive lessons, and personalized support. Our commitment to their success shines through in their enthusiastic feedback.</p>
+        <div class="row">
+            <div class="testimonials-col">
+                <img src="images/student1.jpg">
+                <div>
+                    <h4>Umang Kumar</h4>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <br>
+                    <br>
+                    <p1>Kudos to our top-notch faculty! The abundance of resources, from comprehensive PDFs to challenging mock tests, coupled with their passion for teaching, has transformed my learning experience into an inspiring journey. Thank you for your unwavering support!</p1>
+                </div>
+            </div>
+            <div class="testimonials-col">
+                <img src="images/student2.jpg">
+                <div>
+                    <h4>Jitendra Kumar</h4>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <br>
+                    <br>
+                    <p1>I can't thank our incredible faculty enough for making learning so enjoyable! Their dedication and the extensive materials, including PDFs and mock tests, have boosted my confidence and helped me excel. You guys rock!</p1>
+                </div>
+            </div>
+        </div>
+</section>
+<!------Footer------>
+
+<section class="footer">
+    <h5>About Us</h5>
+    <p>Explore our story and mission on our About Us page.<br> Learn about our passion for education and dedication to your success.</p>
+    <div class="icons">
+        <i class="fa fa-telegram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+    </div>
+    <p>Made with  <i class="fa fa-heart"></i>  From Umang</p>
+</section>
+
+ <!-------Java Script for Toogle Menu------>
+<script>
+
+    var navLinks = document.getElementById("navLinks")
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script> 
+<!-------Java Script for login register------>
+<script src="script.js"></script>
+
+</body>
+</html>
+

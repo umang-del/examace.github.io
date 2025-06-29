@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Solution</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="materials.html">MATERIALS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Solution</h1>
+    </section>
+
+    <section class="solution-content">
+        <div class="solution-row">
+            <div class="solution-col question-section">
+                <h2>Question</h2>
+                <p>
+                    This is where your question will be displayed. Make sure to format it clearly for your students. You can include text, code snippets, or even small images if needed. The goal is to present the problem in an easy-to-understand manner. <br><br>
+                    <strong>Example Question:</strong><br>
+                    If a train travels at 60 km/h for 2 hours and then at 80 km/h for 1.5 hours, what is the total distance covered by the train?
+                </p>
+                <button class="report-btn">Report Issue</button>
+            </div>
+            <div class="solution-col solution-image-section">
+                <h2>Solution</h2>
+                <img src="images/solution_example.jpg" alt="Solution Image">
+                <p class="image-caption">Detailed step-by-step solution for the question above.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <h5>About Us</h5>
+        <p>Explore our story and mission on our About Us page.<br> Learn about our passion for education and dedication to your success.</p>
+        <div class="icons">
+            <i class="fa fa-telegram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart"></i> From Umang</p>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
